@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100;300;700&family=Poppins:wght@100;200;300;500&family=Spline+Sans:wght@300;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* make margins, paddings inclusive in total widht and height */
+}
+
+:root {
+--main: rgba(13, 15, 29, 0.918);
+--icon-div-hover: rgba(179, 179, 187, 0.089);
+--icon-holder: rgba(101, 101, 109, 0.493);
+
+}
+
+html body{
+    background: var(--main);
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+.settingsIcon{
+    position: absolute;
+    top: 0;
+    left: 97%;
+}
+
+#settingsIcon {
+    filter: contrast(10%) brightness(100%);
+}
+
+
+.holder {
+    margin: 200px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+}
+
+.firefoxIcon{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 50%;
+}
+
+
+
+.brandName {
+    padding-left: 20px;
+    font-size: 3rem;
+
+}
+
+#searchBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 10px;
+}
+
+#searchId {
+    width: 50%;
+    height: 65%;
+    background-color: var(--icon-div-hover);
+    color: #fff;
+    font-weight: 400;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+#searchId:focus {
+    border-color: cyan;
+}
+
+
+input[placeholder="Search with Google or enter address"] {
+    padding-left: 43px;
+    line-height: 10px;
+    font-size: 1rem;
+}
+
+#googleIcon {
+    position: absolute;
+    top: 38%;
+    left: 25.7%;
+    transform: scale(1.2);
+}
+
+
+#bookMarks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    
+}
+
+#bookMarks > * {
+    padding: 20px;
+    margin: 10px;
+}
+
+#iconLayer {
+    border-radius: 8px;
+}
+
+#iconLayer:hover {
+    background-color: var(--icon-div-hover);
+    cursor: pointer;
+}
+
+.iconLogo {
+    height: 65px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--icon-holder);
+}
+
+
+@media screen and (max-width: 900px) {
+    #bookMarks {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+
+    }
+
+    #googleIcon {
+        position: absolute;
+        top: 38%;
+        left: 26.5%;
+        transform: scale(1.2);
+    }
+}
+
